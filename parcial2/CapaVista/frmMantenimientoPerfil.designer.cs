@@ -36,15 +36,15 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.perfilTabla = new System.Windows.Forms.DataGridView();
-            this.dataSet5 = new CapaVista.DataSet5();
-            this.proveedoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.proveedoresTableAdapter = new CapaVista.DataSet5TableAdapters.proveedoresTableAdapter();
             this.codigoproveedorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreproveedorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.direccionproveedorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefonoproveedorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nitproveedorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estatusproveedorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proveedoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet5 = new CapaVista.DataSet5();
+            this.proveedoresTableAdapter = new CapaVista.DataSet5TableAdapters.proveedoresTableAdapter();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -56,8 +56,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.perfilTabla)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proveedoresBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet5)).BeginInit();
             this.SuspendLayout();
             // 
             // btnInsertar
@@ -139,20 +139,6 @@
             this.perfilTabla.TabIndex = 28;
             this.perfilTabla.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.perfilTabla_RowHeaderMouseClick);
             // 
-            // dataSet5
-            // 
-            this.dataSet5.DataSetName = "DataSet5";
-            this.dataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // proveedoresBindingSource
-            // 
-            this.proveedoresBindingSource.DataMember = "proveedores";
-            this.proveedoresBindingSource.DataSource = this.dataSet5;
-            // 
-            // proveedoresTableAdapter
-            // 
-            this.proveedoresTableAdapter.ClearBeforeFill = true;
-            // 
             // codigoproveedorDataGridViewTextBoxColumn
             // 
             this.codigoproveedorDataGridViewTextBoxColumn.DataPropertyName = "codigo_proveedor";
@@ -188,6 +174,20 @@
             this.estatusproveedorDataGridViewTextBoxColumn.DataPropertyName = "estatus_proveedor";
             this.estatusproveedorDataGridViewTextBoxColumn.HeaderText = "estatus_proveedor";
             this.estatusproveedorDataGridViewTextBoxColumn.Name = "estatusproveedorDataGridViewTextBoxColumn";
+            // 
+            // proveedoresBindingSource
+            // 
+            this.proveedoresBindingSource.DataMember = "proveedores";
+            this.proveedoresBindingSource.DataSource = this.dataSet5;
+            // 
+            // dataSet5
+            // 
+            this.dataSet5.DataSetName = "DataSet5";
+            this.dataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // proveedoresTableAdapter
+            // 
+            this.proveedoresTableAdapter.ClearBeforeFill = true;
             // 
             // label1
             // 
@@ -295,11 +295,11 @@
             this.Controls.Add(this.labelNombreaplicacion);
             this.Controls.Add(this.labelIdaplicacion);
             this.Name = "frmMantenimientoPerfil";
-            this.Text = "frmMantenimientoPerfil";
+            this.Text = "frmProveedor";
             this.Load += new System.EventHandler(this.frmMantenimientoPerfil_Load);
             ((System.ComponentModel.ISupportInitialize)(this.perfilTabla)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proveedoresBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
